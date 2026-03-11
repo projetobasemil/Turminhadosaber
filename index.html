@@ -3,133 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Turminha do Saber</title>
 
 <style>
 
 body{
-font-family:Arial;
+font-family: Arial;
 margin:0;
-background:#f5f6fa;
+background:#fff8dc;
+text-align:center;
+}
+
+.topo{
+background:#ffcc00;
+padding:40px;
+}
+
+h1{
 color:#333;
+font-size:40px;
 }
 
-/* HERO */
-
-.hero{
-background:linear-gradient(135deg,#ff9800,#ff5722);
-color:white;
-text-align:center;
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:44px;
-margin-bottom:10px;
-}
-
-.hero p{
+.sub{
 font-size:20px;
+color:#444;
 }
 
-/* CONTAINER */
+.botao{
+background:#28a745;
+color:white;
+padding:18px 35px;
+font-size:22px;
+border-radius:10px;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+}
 
-.container{
-max-width:1000px;
-margin:auto;
+.secao{
 padding:40px 20px;
-text-align:center;
-}
-
-/* GRID BENEFITS */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* PRICE */
-
-.price{
-font-size:55px;
-color:#27ae60;
-margin:20px 0;
-}
-
-/* BUTTON */
-
-.button{
-display:inline-block;
-background:#ff5722;
-color:white;
-padding:18px 40px;
-font-size:22px;
-border-radius:10px;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-}
-
-.button:hover{
-background:#e64a19;
-}
-
-/* TESTIMONIAL */
-
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.testimonial{
-background:white;
 padding:20px;
+margin:15px;
 border-radius:10px;
-box-shadow:0 5px 12px rgba(0,0,0,0.1);
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-/* GUARANTEE */
-
-.guarantee{
-background:#ecf0f1;
-padding:40px;
-margin-top:40px;
-border-radius:10px;
-}
-
-/* FOOTER */
-
-.footer{
+footer{
 background:#333;
 color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
-/* WHATSAPP FLOAT */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-font-size:18px;
-text-decoration:none;
+padding:20px;
 }
 
 </style>
@@ -138,130 +65,63 @@ text-decoration:none;
 
 <body>
 
-<div class="hero">
+<div class="topo">
 
-<h1>Turminha do Saber</h1>
+<h1>📚 Turminha do Saber</h1>
 
-<p>150 atividades educativas para crianças de 4 a 7 anos</p>
-
-</div>
-
-<div class="container">
-
-<h2>📚 O que você vai encontrar</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Alfabetização</h3>
-<p>Aprenda letras e palavras brincando.</p>
-</div>
-
-<div class="card">
-<h3>Coordenação Motora</h3>
-<p>Treinos para melhorar escrita e concentração.</p>
-</div>
-
-<div class="card">
-<h3>Matemática</h3>
-<p>Atividades com números e contagem.</p>
-</div>
-
-<div class="card">
-<h3>Colorir</h3>
-<p>Desenhos divertidos para estimular criatividade.</p>
-</div>
-
-</div>
-
-<h2 style="margin-top:50px;">👨‍👩‍👧 Perfeito para</h2>
-
-<p>
-
-Pais que querem ajudar os filhos a aprender  
-<br>
-Professores da educação infantil  
-<br>
-Crianças de 4 a 7 anos
-
+<p class="sub">
+Mais de <b>150 atividades educativas</b><br>
+para crianças de <b>4 a 7 anos</b>
 </p>
 
-<h2 style="margin-top:50px;">⭐ Avaliações</h2>
-
-<div class="testimonials">
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐  
-<p>Meu filho adorou as atividades.</p>
-<b>Ana – SP</b>
-</div>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐  
-<p>Material muito completo.</p>
-<b>Juliana</b>
-</div>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐  
-<p>Ótimo para alfabetização.</p>
-<b>Professor Carlos</b>
-</div>
+<a class="botao" href="COLOQUE_SEU_LINK_DE_PAGAMENTO_AQUI">
+QUERO APOSTILA AGORA
+</a>
 
 </div>
 
-<h2 style="margin-top:50px;">🔥 Oferta especial</h2>
+<div class="secao">
 
-<div class="price">
+<h2>✨ O que você vai encontrar</h2>
 
-R$19,90
+<div class="card">✏️ Atividades de alfabetização</div>
+<div class="card">🔤 Aprendizado de sílabas</div>
+<div class="card">🧠 Coordenação motora</div>
+<div class="card">🎨 Desenhos para colorir</div>
+<div class="card">📖 Exercícios educativos</div>
 
 </div>
 
-<a class="button" href="LINK-DE-PAGAMENTO">
+<div class="secao">
 
+<h2>🎯 Ideal para</h2>
+
+<p>
+✔ Crianças de 4 a 7 anos<br><br>
+✔ Pais que querem ajudar na alfabetização<br><br>
+✔ Professores da educação infantil
+</p>
+
+</div>
+
+<div class="secao">
+
+<h2>💰 Oferta especial</h2>
+
+<h1>R$ 19,90</h1>
+
+<a class="botao" href="COLOQUE_SEU_LINK_DE_PAGAMENTO_AQUI">
 COMPRAR AGORA
-
 </a>
 
-<h3>Pagamento seguro</h3>
-
-<p>
-
-PIX • Cartão • Boleto
-
-</p>
-
-<div class="guarantee">
-
-<h2>🔒 Garantia de 7 dias</h2>
-
-<p>
-
-Se você não gostar do material, pode pedir reembolso.
-
-</p>
-
 </div>
 
-</div>
+<footer>
 
-<div class="footer">
+Turminha do Saber © 2026  
+Material educativo infantil
 
-<p>
-
-Produto digital em PDF  
-Entrega automática após pagamento
-
-</p>
-
-</div>
-
-<a class="whatsapp" href="https://wa.me/5599999999999">
-
-WhatsApp
-
-</a>
+</footer>
 
 </body>
 </html>
