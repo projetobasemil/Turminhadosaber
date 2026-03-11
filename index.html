@@ -11,12 +11,14 @@ body{
   background:#fff8dc;
   text-align:center;
   overflow-x:hidden;
+  position: relative;
 }
 
+/* Topo */
 .topo{
   background:#ffcc00;
   padding:50px 20px;
-  position:relative;
+  position: relative;
 }
 
 h1{
@@ -30,6 +32,7 @@ h1{
   margin-top:10px;
 }
 
+/* Botão */
 .botao{
   background:#28a745;
   color:white;
@@ -46,6 +49,7 @@ h1{
   transform: scale(1.05);
 }
 
+/* Seções */
 .secao{
   padding:40px 20px;
 }
@@ -60,6 +64,7 @@ h1{
   font-size:18px;
 }
 
+/* Footer */
 footer{
   background:#333;
   color:white;
@@ -67,27 +72,39 @@ footer{
   margin-top:30px;
 }
 
-/* Ícones divertidos espalhados */
-.icon{
-  font-size:30px;
+/* Animations */
+.estrela{
   position:absolute;
-  animation: float 6s infinite;
+  font-size:20px;
+  animation: pisca 2s infinite;
 }
-@keyframes float{
-  0% {transform: translateY(0);}
-  50% {transform: translateY(-15px);}
-  100% {transform: translateY(0);}
+@keyframes pisca{
+  0%,100%{opacity:0.2;}
+  50%{opacity:1;}
 }
 
-/* Contador de oferta */
-#contador{
-  font-size:24px;
-  color:red;
-  font-weight:bold;
-  margin-top:10px;
+.balao{
+  position:absolute;
+  animation: flutua 8s infinite linear;
+}
+@keyframes flutua{
+  0%{transform: translateY(0);}
+  50%{transform: translateY(-50px);}
+  100%{transform: translateY(0);}
+}
+
+.lapis, .livro{
+  position:absolute;
+  animation: move 6s infinite linear alternate;
+}
+@keyframes move{
+  0%{transform: translateY(0);}
+  50%{transform: translateY(-20px);}
+  100%{transform: translateY(0);}
 }
 </style>
 </head>
+
 <body>
 
 <div class="topo">
@@ -96,22 +113,14 @@ footer{
 
   <!-- Imagem do produto -->
   <div style="text-align:center; margin: 20px 0;">
-    <img src="mockup_3D.png" alt="Turminha do Saber" style="width:80%; max-width:400px; border-radius:10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+    <img src="mockup_3D.png" alt="Turminha do Saber" style="width:80%; max-width:400px; border-radius:10px; box-shadow:0 6px 15px rgba(0,0,0,0.2);">
   </div>
 
   <!-- Botão de compra -->
   <a class="botao" href="https://pay.kiwify.com.br/5cJAphD" target="_blank">QUERO MINHA APOSTILA</a>
-
-  <!-- Contador de oferta -->
-  <div id="contador">Últimas 10 unidades!</div>
 </div>
 
-<!-- Ícones flutuantes -->
-<div class="icon" style="top:20px; left:10px;">🖍️</div>
-<div class="icon" style="top:50px; right:15px;">📖</div>
-<div class="icon" style="top:100px; left:50px;">🔤</div>
-<div class="icon" style="top:150px; right:60px;">✏️</div>
-
+<!-- Seções -->
 <div class="secao">
   <h2>✨ O que você vai encontrar</h2>
   <div class="card">✏️ Exercícios de alfabetização</div>
@@ -140,6 +149,17 @@ footer{
   Turminha do Saber © 2026<br>
   Material educativo infantil
 </footer>
+
+<!-- Ícones animados -->
+<div class="estrela" style="top:30px; left:50px;">⭐</div>
+<div class="estrela" style="top:80px; right:60px;">⭐</div>
+<div class="estrela" style="top:150px; left:200px;">⭐</div>
+
+<div class="balao" style="top:300px; left:20px;">🎈</div>
+<div class="balao" style="top:350px; right:30px;">🎈</div>
+
+<div class="lapis" style="top:200px; left:100px;">🖍️</div>
+<div class="livro" style="top:250px; right:120px;">📖</div>
 
 </body>
 </html>
