@@ -3,126 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Turminha do Saber</title>
-
 <style>
-
 body{
-font-family: Arial;
-margin:0;
-background:#fff8dc;
-text-align:center;
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#fff8dc;
+  text-align:center;
+  overflow-x:hidden;
 }
 
 .topo{
-background:#ffcc00;
-padding:40px;
+  background:#ffcc00;
+  padding:50px 20px;
+  position:relative;
 }
 
 h1{
-color:#333;
-font-size:40px;
+  color:#333;
+  font-size:42px;
 }
 
 .sub{
-font-size:20px;
-color:#444;
+  font-size:20px;
+  color:#444;
+  margin-top:10px;
 }
 
 .botao{
-background:#28a745;
-color:white;
-padding:18px 35px;
-font-size:22px;
-border-radius:10px;
-text-decoration:none;
-display:inline-block;
-margin-top:20px;
+  background:#28a745;
+  color:white;
+  padding:18px 35px;
+  font-size:22px;
+  border-radius:12px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.botao:hover{
+  transform: scale(1.05);
 }
 
 .secao{
-padding:40px 20px;
+  padding:40px 20px;
 }
 
 .card{
-background:white;
-padding:20px;
-margin:15px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+  background:white;
+  padding:20px;
+  margin:15px auto;
+  border-radius:12px;
+  box-shadow:0 0 15px rgba(0,0,0,0.1);
+  max-width:400px;
+  font-size:18px;
 }
 
 footer{
-background:#333;
-color:white;
-padding:20px;
+  background:#333;
+  color:white;
+  padding:20px;
+  margin-top:30px;
 }
 
+/* Ícones divertidos espalhados */
+.icon{
+  font-size:30px;
+  position:absolute;
+  animation: float 6s infinite;
+}
+@keyframes float{
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-15px);}
+  100% {transform: translateY(0);}
+}
+
+/* Contador de oferta */
+#contador{
+  font-size:24px;
+  color:red;
+  font-weight:bold;
+  margin-top:10px;
+}
 </style>
-
 </head>
-
 <body>
 
 <div class="topo">
+  <h1>📚 Turminha do Saber</h1>
+  <p class="sub">Mais de <b>150 atividades educativas</b> para crianças de <b>4 a 7 anos</b></p>
 
-<h1>📚 Turminha do Saber</h1>
+  <!-- Imagem do produto -->
+  <div style="text-align:center; margin: 20px 0;">
+    <img src="mockup_3D.png" alt="Turminha do Saber" style="width:80%; max-width:400px; border-radius:10px; box-shadow: 0 6px 15px rgba(0,0,0,0.2);">
+  </div>
 
-<p class="sub">
-Mais de <b>150 atividades educativas</b><br>
-para crianças de <b>4 a 7 anos</b>
-</p>
-<div style="text-align:center; margin: 20px 0;">
-  <img src="mockup_3D.png" alt="Turminha do Saber" style="width:80%; max-width:400px; border-radius:10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
+  <!-- Botão de compra -->
+  <a class="botao" href="https://pay.kiwify.com.br/5cJAphD" target="_blank">QUERO MINHA APOSTILA</a>
+
+  <!-- Contador de oferta -->
+  <div id="contador">Últimas 10 unidades!</div>
 </div>
-<a class="botao" href="https://pay.kiwify.com.br/5cJAphD" target="_blank">
-  COMPRAR AGORA
-</a>
 
+<!-- Ícones flutuantes -->
+<div class="icon" style="top:20px; left:10px;">🖍️</div>
+<div class="icon" style="top:50px; right:15px;">📖</div>
+<div class="icon" style="top:100px; left:50px;">🔤</div>
+<div class="icon" style="top:150px; right:60px;">✏️</div>
+
+<div class="secao">
+  <h2>✨ O que você vai encontrar</h2>
+  <div class="card">✏️ Exercícios de alfabetização</div>
+  <div class="card">🔤 Aprendizado de sílabas e palavras</div>
+  <div class="card">🧠 Coordenação motora</div>
+  <div class="card">🎨 Desenhos para colorir</div>
+  <div class="card">📖 Matemática básica e jogos educativos</div>
 </div>
 
 <div class="secao">
-
-<h2>✨ O que você vai encontrar</h2>
-
-<div class="card">✏️ Atividades de alfabetização</div>
-<div class="card">🔤 Aprendizado de sílabas</div>
-<div class="card">🧠 Coordenação motora</div>
-<div class="card">🎨 Desenhos para colorir</div>
-<div class="card">📖 Exercícios educativos</div>
-
+  <h2>🎯 Ideal para</h2>
+  <p>
+    ✔ Crianças de 4 a 7 anos<br><br>
+    ✔ Pais que querem ajudar na alfabetização<br><br>
+    ✔ Professores da educação infantil
+  </p>
 </div>
 
 <div class="secao">
-
-<h2>🎯 Ideal para</h2>
-
-<p>
-✔ Crianças de 4 a 7 anos<br><br>
-✔ Pais que querem ajudar na alfabetização<br><br>
-✔ Professores da educação infantil
-</p>
-
-</div>
-
-<div class="secao">
-
-<h2>💰 Oferta especial</h2>
-
-<h1>R$ 19,90</h1>
-
-<a class="botao" href="COLOQUE_SEU_LINK_DE_PAGAMENTO_AQUI">
-COMPRAR AGORA
-</a>
-
+  <h2>💰 Oferta Especial</h2>
+  <h1>R$ 19,90</h1>
+  <a class="botao" href="https://pay.kiwify.com.br/5cJAphD" target="_blank">COMPRAR AGORA</a>
 </div>
 
 <footer>
-
-Turminha do Saber © 2026  
-Material educativo infantil
-
+  Turminha do Saber © 2026<br>
+  Material educativo infantil
 </footer>
 
 </body>
